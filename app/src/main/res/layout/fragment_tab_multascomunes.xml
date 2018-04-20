@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.cdgal.proyecto_ingsoft.Tab_MultasComunesFragment"
-    android:background="@drawable/formulario">
+    android:background="@drawable/formulario2">
 
     <!-- TODO: Update blank fragment layout -->
 

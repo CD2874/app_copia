@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.example.cdgal.proyecto_ingsoft.AddAgenteFrgment"
-    android:background="@drawable/formulario">
+    android:background="@drawable/formulario2">
 
     <ScrollView
         android:layout_width="match_parent"

@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.example.cdgal.proyecto_ingsoft.EditarMiCuenta"
-    android:background="@drawable/formulario" >
+    android:background="@drawable/formulario2" >
 
     <ScrollView
         android:layout_width="match_parent"
@@ -139,7 +139,7 @@
                     android:layout_width="35dp"
                     android:layout_height="45dp"
                     android:layout_weight="6"
-                    android:background="@drawable/shadow_blue"
+                    android:background="@drawable/shadow_red"
                     android:text="Cancelar"
                     android:textColor="@android:color/white"
                     android:onClick="llamarMiCuenta"/>

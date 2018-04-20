@@ -1,5 +1,6 @@
 package com.example.cdgal.proyecto_ingsoft;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -23,15 +24,6 @@ public class ActivityPrincipalParticular extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        /*FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });*/
-
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -42,7 +34,7 @@ public class ActivityPrincipalParticular extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
         android.support.v4.app.FragmentManager fragmentManager = getSupportFragmentManager();
-        fragmentManager.beginTransaction().replace(R.id.contenedor2, new MiCuentaFragment()).commit();
+        fragmentManager.beginTransaction().replace(R.id.contenedor2, new AgregarVehiculoFragment()).commit();
     }
 
     @Override
@@ -86,7 +78,7 @@ public class ActivityPrincipalParticular extends AppCompatActivity
         android.support.v4.app.FragmentManager fragmentManager = getSupportFragmentManager();
 
         if (id == R.id.nav_addvehiculo) {
-
+            fragmentManager.beginTransaction().replace(R.id.contenedor2, new AgregarVehiculoFragment()).commit();
         } else if (id == R.id.nav_top) {
             fragmentManager.beginTransaction().replace(R.id.contenedor2, new TopVehiculosFragment()).commit();
         } else if (id == R.id.nav_costoMultas) {
